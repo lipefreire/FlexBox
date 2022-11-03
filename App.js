@@ -6,6 +6,8 @@ import Banner from './src/components/banner'
 import Categories from './src/components/categories'
 import Promotion from './src/components/promotion'
 
+import Caixa from './src/icons/caixa'
+
 export default function App() {
   return (
     <View>

@@ -1,34 +1,31 @@
 import { StyleSheet, View } from 'react-native';
 import React from 'react'
 
-import TwoText from '../icons/twoText'
-import Caixa from '../icons/caixa'
-
-export default function Promotion() {
+export default function Menu() {
     return (
       <View style={styles.promotion}>
-        <TwoText></TwoText>
-        <Caixa></Caixa>
+        <View style={{width: 190, height: 10, backgroundColor: 'powderblue', borderRadius: 40}}></View>
+        <View style={{width: 190, height: 10, backgroundColor: 'powderblue', borderRadius: 40}}></View>
       </View>
     );
 }
 
 const styles = StyleSheet.create({
     container: {
-        flexDirection: 'column',
+        flexDirection: 'row',
         width: 200,
     },
     promotion: {
-        flexDirection: 'row',
-        flexBasis: 140,
+        flex: 1,
+        flexDirection: 'column',
+        flexBasis: 100,
         backgroundColor: 'steelblue',
         justifyContent: 'space-between',
         alignItems: 'flex-start',
-        paddingTop: 30,
+        paddingTop: 15,
         paddingHorizontal: 20
     },
     texto: {
         width: 150, height: 10, backgroundColor: 'powderblue', borderRadius: 40
     }
 });
-

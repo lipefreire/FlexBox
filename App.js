@@ -5,6 +5,8 @@ import Header from './src/components/header'
 import Banner from './src/components/banner'
 import Categories from './src/components/categories'
 import Promotion from './src/components/promotion'
+import Produtos from './src/components/produtos'
+import Menu from './src/components/menu'
 
 import Caixa from './src/icons/caixa'
 
@@ -15,6 +17,8 @@ export default function App() {
       <Banner></Banner>
       <Categories></Categories>
       <Promotion></Promotion>
+      <Produtos></Produtos>
+      <Menu></Menu>
     </View>
   );
 }

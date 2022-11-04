@@ -1,31 +1,31 @@
-import { StyleSheet, View } from 'react-native';
-import React from 'react'
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View } from "react-native";
+import Botao from "../icons/botao"
 
 export default function Menu() {
-    return (
-      <View style={styles.promotion}>
-        <View style={{width: 190, height: 10, backgroundColor: 'powderblue', borderRadius: 40}}></View>
-        <View style={{width: 190, height: 10, backgroundColor: 'powderblue', borderRadius: 40}}></View>
-      </View>
-    );
+  return (
+    <View style={styles.header}>
+      <Botao></Botao>
+      <Botao></Botao>
+      <Botao></Botao>
+      <Botao></Botao>
+      <Botao></Botao>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flexDirection: 'row',
-        width: 200,
-    },
-    promotion: {
-        flex: 1,
-        flexDirection: 'column',
-        flexBasis: 100,
-        backgroundColor: 'steelblue',
-        justifyContent: 'space-between',
-        alignItems: 'flex-start',
-        paddingTop: 15,
-        paddingHorizontal: 20
-    },
-    texto: {
-        width: 150, height: 10, backgroundColor: 'powderblue', borderRadius: 40
-    }
+  container: {
+    flex: 1,
+  },
+  header: {
+    flexDirection: "row",
+    flexBasis: 55,
+    backgroundColor: "steelblue",
+    width: "100%",
+    height: "20%",
+    justifyContent: 'space-between',
+    alignItems: "center",
+    paddingHorizontal: 45,
+  }
 });
